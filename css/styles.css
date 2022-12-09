@@ -122,7 +122,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 2em;
-
+    margin-bottom: 1em;
 }
 #game-of-the-year h1{
     text-align: center;
@@ -141,25 +141,80 @@ main{
     filter: brightness(50%);
 }
 .btn-show-winner{
-    border: 0;
+    border: 1px solid white;
     width: 20em;
     height: 3em;
     border-radius: 0.5em;
-    background-color: white;
-    color: rgb(16, 6, 33);
+    background-color: transparent;
+    color: white;
     font-weight: bold;
     letter-spacing: 0.2em;
     font-family: 'Titillium Web', sans-serif;
     cursor: pointer;
 }
 .btn-show-winner:hover{
-    background-color: rgb(207,2,7);
-    color: white;
+    background-color: white;
+    color: black;
     transition: 1s;
 }
 .images-game-year .game-winner{
     filter: brightness(100%);
     transition: 1s;
+}
+
+/*Contact*/
+#contact{
+   grid-template-columns: repeat(2, 50%);
+   background-image: url(../img/about-awards.jpg);
+   background-size: cover;
+   background-repeat: no-repeat; 
+}
+
+#contact form{
+    margin-top: 5em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+}
+#contact form input, button {
+    margin-top: 1em;
+}
+.contact-btn{
+    border: 1px solid white;
+    width: 20em;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer; 
+}
+.contact-btn:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+#contact input {
+    border: none;
+    height: 3em;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    outline: 0;
+}
+.form-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.contact-title{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
 }
 
 
